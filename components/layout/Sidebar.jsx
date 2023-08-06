@@ -75,7 +75,7 @@ const Sidebar = ({
             })}
           </ul>
         </nav>
-        <div
+        {/* <div
           className={classNames({
             "grid place-content-stretch p-4 ": true,
           })}
@@ -90,7 +90,7 @@ const Sidebar = ({
               </div>
             )}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

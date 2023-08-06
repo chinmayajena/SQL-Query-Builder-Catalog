@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import React, { PropsWithChildren, useState } from "react";
-import Navbar from "./Navbar";
+import React, { useState } from "react";
+
 import Sidebar from "./Sidebar";
 const Layout = (props) => {
   const [collapsed, setSidebarCollapsed] = useState(false);
@@ -19,6 +19,7 @@ const Layout = (props) => {
         setCollapsed={setSidebarCollapsed}
         shown={showSidebar}
       />
+      {props.children}
     </div>
   );
 };

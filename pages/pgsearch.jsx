@@ -33,11 +33,6 @@ export async function getServerSideProps() {
       tableMeta["table_name"] = table.table_name;
       tableMeta["columns"] = [];
       tableMetadata.rows.forEach((row, index) => {
-        /*    console.log(
-          `${index + 1}. Column: ${row.column_name}, Type: ${
-            row.data_type
-          }, Nullable: ${row.is_nullable}`
-        ); */
         let colDetails = {};
         colDetails["col_name"] = row.column_name;
         colDetails["data_type"] = row.data_type;
